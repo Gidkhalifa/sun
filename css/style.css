@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+    background-color: rgb(152, 201, 236);
+    overflow: hidden;
+}
+.land{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(107, 103, 92);
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+}
+.hill{
+    width: 40vh;
+    height: 40vh;
+    border: 1px solid black;
+transform: rotate(46deg);
+background-color: rgb(66, 192, 66);
+position: absolute;
+bottom: 1%;
+
+}
+.hill:nth-child(1){
+    10%
+}
+.hill:nth-child(2){
+ left: 30%;
+}
+.hill:nth-child(3){
+    left: 50%;
+}
+.hill:nth-child(4){
+    left: 80%;
+}
+.sun{
+    width: 15vh;
+    height: 15vh;
+    background-color: rgb(232, 207, 23);
+    border-radius: 50%;
+    position: absolute;
+    right:10%;
+    bottom: 20%;
+    border: 2px solid red;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes move{
+    0%{
+     transform: translate(-50%,-50%);
+    }
+    10%{
+        transform: translate(-150%,-100%);
+        
+    }
+    20%{
+        transform: translate(-250%,-150%);
+        
+    }
+    30%{
+        transform: translate(-350%,-200%);
+
+    }
+    40%{
+        transform: translate(-450%,-250%);
+    }
+    50%{
+        transform: translate(-550%,-300%);
+    }
+    60%{
+        transform: translate(-650%,-250%);
+        
+    }
+    70%{
+        transform: translate(-750%,-200%);
+        
+    }
+    80%{
+        transform: translate(-850%,-150%);
+
+    }
+    90%{
+        transform: translate(-950%,-100%);
+    }
+    100%{
+        transform: translate(-1000%,-50%);
+    }
+}
+.tree{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(29, 230, 59);
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    border-radius: 50%;
+
+}
+.trunk{
+    width: 15px;
+    height: 90px;
+    background-color: rgb(162, 92, 42);
+    position: absolute;
+    left:61.7%;
+    top: 64%;
+    
+
+}
